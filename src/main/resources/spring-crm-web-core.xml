@@ -27,7 +27,7 @@
     <!-- Placeholder config -->
     <context:property-placeholder location="classpath:system.properties" />
 
-    <jpa:repositories base-package="pl.com.softproject.spring.crm.web.dao"/>
+    <jpa:repositories base-package="pl.com.marcinkrol.spring.crm.web.dao"/>
     	
 	<!-- aktywacja springowego cache
 	<cache:annotation-driven />
@@ -46,7 +46,7 @@
     
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="dataSource" ref="dataSource" />
-        <property name="packagesToScan" value="pl.com.softproject.spring.crm.web.model" />
+        <property name="packagesToScan" value="pl.com.marcinkrol.spring.crm.web.model" />
 
         <property name="jpaVendorAdapter">
             <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">

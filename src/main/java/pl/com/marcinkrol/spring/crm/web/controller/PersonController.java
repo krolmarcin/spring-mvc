@@ -2,7 +2,7 @@
  * Copyright 2011-08-31 the original author or authors.
  */
 
-package pl.com.softproject.spring.crm.web.controller;
+package pl.com.marcinkrol.spring.crm.web.controller;
 
 import javax.validation.Valid;
 
@@ -13,10 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-import pl.com.softproject.spring.crm.web.dao.PersonDAO;
-import pl.com.softproject.spring.crm.web.dao.TeamDAO;
-import pl.com.softproject.spring.crm.web.model.Person;
-import pl.com.softproject.spring.crm.web.model.Team;
+import pl.com.marcinkrol.spring.crm.web.dao.PersonDAO;
+import pl.com.marcinkrol.spring.crm.web.dao.TeamDAO;
+import pl.com.marcinkrol.spring.crm.web.model.Person;
 
 @Controller
 @RequestMapping("/person")

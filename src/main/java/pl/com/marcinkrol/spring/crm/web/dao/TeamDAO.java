@@ -2,10 +2,10 @@
  * Copyright 2011-08-31 the original author or authors.
  */
 
-package pl.com.softproject.spring.crm.web.dao;
+package pl.com.marcinkrol.spring.crm.web.dao;
 
 import org.springframework.data.repository.CrudRepository;
-import pl.com.softproject.spring.crm.web.model.Team;
+import pl.com.marcinkrol.spring.crm.web.model.Team;
 
 public interface TeamDAO extends CrudRepository<Team, Integer> {
 

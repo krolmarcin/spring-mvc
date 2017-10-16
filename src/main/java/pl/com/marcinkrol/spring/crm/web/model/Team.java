@@ -2,7 +2,7 @@
  * Copyright 2011-08-31 the original author or authors.
  */
 
-package pl.com.softproject.spring.crm.web.model;
+package pl.com.marcinkrol.spring.crm.web.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

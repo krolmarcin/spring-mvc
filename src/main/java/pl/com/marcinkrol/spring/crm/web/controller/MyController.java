@@ -1,7 +1,7 @@
 /*
  * Copyright 2011-08-31 the original author or authors.
  */
-package pl.com.softproject.spring.crm.web.controller;
+package pl.com.marcinkrol.spring.crm.web.controller;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
@@ -20,7 +20,7 @@ public class MyController {
 
         ModelAndView model = new ModelAndView("home");
 
-        model.addObject("imie", "Alicja");
+        model.addObject("imie", "Marcin");
 
         return model;
     }

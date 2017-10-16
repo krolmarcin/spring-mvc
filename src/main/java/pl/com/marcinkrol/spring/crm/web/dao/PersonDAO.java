@@ -2,12 +2,12 @@
  * Copyright 2011-08-31 the original author or authors.
  */
 
-package pl.com.softproject.spring.crm.web.dao;
+package pl.com.marcinkrol.spring.crm.web.dao;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
-import pl.com.softproject.spring.crm.web.model.Person;
+import pl.com.marcinkrol.spring.crm.web.model.Person;
 
 public interface PersonDAO extends CrudRepository<Person, Integer> {
 
