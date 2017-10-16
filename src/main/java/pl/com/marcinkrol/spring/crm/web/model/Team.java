@@ -9,17 +9,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-/**
- *
- * @author Adrian Lapierre <adrian@softproject.com.pl>
- */
 @Entity
 public class Team {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    
+
     private String name;
 
     public int getId() {
@@ -37,8 +33,6 @@ public class Team {
     public void setName(String name) {
         this.name = name;
     }
-    
-    
-    
-    
+
+
 }

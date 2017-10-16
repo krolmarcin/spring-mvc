@@ -7,10 +7,6 @@ package pl.com.softproject.spring.crm.web.dao;
 import org.springframework.data.repository.CrudRepository;
 import pl.com.softproject.spring.crm.web.model.Team;
 
-/**
- *
- * @author Adrian Lapierre <adrian@softproject.com.pl>
- */
-public interface TeamDAO  extends CrudRepository<Team, Integer>{
-    
+public interface TeamDAO extends CrudRepository<Team, Integer> {
+
 }

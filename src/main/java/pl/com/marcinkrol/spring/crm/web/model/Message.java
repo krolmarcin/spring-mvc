@@ -11,21 +11,17 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-/**
- *
- * @author Adrian Lapierre <adrian@softproject.com.pl>
- */
 @Entity
 public class Message {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    
+
     private String subject;
-    
+
     private String content;
-    
+
     @ManyToOne
     @JoinColumn(name = "person_id")
     private Person person;
@@ -61,7 +57,6 @@ public class Message {
     public void setPerson(Person person) {
         this.person = person;
     }
-    
-    
-    
+
+
 }

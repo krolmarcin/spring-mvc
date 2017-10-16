@@ -13,20 +13,17 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
-/**
- *
- * @author Adrian Lapierre <adrian@softproject.com.pl>
- */
 @Entity
 public class Person {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    
+
     @NotEmpty
     private String name;
     @NotEmpty
@@ -39,10 +36,10 @@ public class Person {
     @ManyToOne
     @JoinColumn(name = "team_id")
     private Team team;
-    
+
     @OneToMany(mappedBy = "person")
     private List<Message> messages = new ArrayList<Message>(0);
-    
+
     public Integer getId() {
         return id;
     }
@@ -98,12 +95,11 @@ public class Person {
     public void setMessages(List<Message> messages) {
         this.messages = messages;
     }
-    
+
     @Override
     public String toString() {
         return "Person{" + "id=" + id + ", name=" + name + ", lastName=" + lastName + ", email=" + email + ", discount=" + discount + '}';
     }
-    
-    
-    
+
+
 }
